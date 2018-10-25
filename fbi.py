@@ -63,11 +63,11 @@ def show_program():
                     %sINFORMATION%s
  ------------------------------------------------------
 
-    Author     Hak9
+    Author     LinuxDC
     Name       Facebook Information
     Version    Full Version
     Date       13/08/2018 
-    Jabber     xhak9x@jabber.de
+    Jabber     xlinuxdc@jabber.de
 
 * if you find any errors or problems , please contact
   author
@@ -148,9 +148,7 @@ def get(data):
 		print '[*] successfully generate access token'
 		print '[*] Your access token is stored in cookie/token.log'
 		exit()
-	except KeyError:
-		print '[!] Failed to generate access token'
-		print '[!] Check your connection / email or password'
+
 		os.remove('cookie/token.log')
 		main()
 	except requests.exceptions.ConnectionError:
